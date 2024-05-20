@@ -24,7 +24,6 @@
     <button onclick="downloadImage()">Download</button>
 
     <script>
-        // JavaScript code included directly for easier debugging
         const canvas = document.getElementById('clipCanvas');
         const ctx = canvas.getContext('2d');
         const imageUpload = document.getElementById('imageUpload');
@@ -79,7 +78,7 @@
         function downloadImage() {
             const link = document.createElement('a');
             link.download = 'clipped-image.png';
-            link.href = canvas.toDataURL();
+            link.href = canvas.toDataURL('image/png', 1.0); // Ensure the output is in PNG format
             link.click();
         }
     </script>
