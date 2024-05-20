@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Power Clip</title>
+    <style>
+        #canvas-container {
+            position: relative;
+            width: 7.872in;
+            height: 4.16in;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="clipCanvas" width="787.2" height="416"></canvas>
+    </div>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button onclick="downloadImage()">Download</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
